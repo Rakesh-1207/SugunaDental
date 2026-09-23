@@ -4,7 +4,7 @@ import ScrollReveal from './ScrollReveal';
 
 export default function Hero({ onOpenBooking, onOpenAISmile }) {
   return (
-    <section className="relative bg-gradient-to-b from-orange-50/60 via-white to-slate-50 text-slate-900 pt-16 pb-20 lg:pt-24 lg:pb-32 overflow-hidden">
+    <section className="relative bg-gradient-to-b from-orange-50/60 via-white to-slate-50 text-slate-900 pt-28 sm:pt-32 lg:pt-36 pb-20 lg:pb-32 overflow-hidden">
       {/* Soft Decorative Animated Glow */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-orange-200/40 rounded-full blur-[140px] pointer-events-none animate-pulse-glow" />
       <div className="absolute top-12 left-10 w-72 h-72 bg-amber-300/20 rounded-full blur-[100px] pointer-events-none animate-float-slow" />
