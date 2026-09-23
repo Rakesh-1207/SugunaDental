@@ -25,11 +25,11 @@ export default function Header({ onOpenBooking }) {
 
   return (
     <header className="sticky top-0 z-50 transition-all duration-300">
-      {/* Main Navigation - Glassmorphic Transparency Style */}
-      <nav className={`transition-all duration-300 ${
+      {/* Main Navigation - Ultra Glass Transparency Style */}
+      <nav className={`transition-all duration-300 backdrop-saturate-150 ${
         isScrolled 
-          ? 'bg-white/75 backdrop-blur-xl shadow-lg shadow-slate-900/5 py-3 border-b border-slate-200/60 text-slate-900' 
-          : 'bg-white/50 backdrop-blur-md py-4 text-slate-900 border-b border-slate-200/40'
+          ? 'bg-white/40 backdrop-blur-2xl shadow-[0_8px_32px_0_rgba(0,0,0,0.06)] py-3 border-b border-white/60 text-slate-900' 
+          : 'bg-white/20 backdrop-blur-xl py-4 text-slate-900 border-b border-white/40'
       }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
           
@@ -92,7 +92,7 @@ export default function Header({ onOpenBooking }) {
 
         {/* Mobile Navigation Drawer */}
         {mobileMenuOpen && (
-          <div className="lg:hidden bg-white text-slate-900 px-6 pt-4 pb-6 border-t border-slate-200 space-y-4 shadow-xl">
+          <div className="lg:hidden bg-white/85 backdrop-blur-xl text-slate-900 px-6 pt-4 pb-6 border-t border-white/60 space-y-4 shadow-2xl">
             {navLinks.map((link) => (
               <a
                 key={link.name}
