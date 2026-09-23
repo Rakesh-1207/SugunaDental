@@ -25,11 +25,11 @@ export default function Header({ onOpenBooking }) {
 
   return (
     <header className="sticky top-0 z-50 transition-all duration-300">
-      {/* Main Navigation - Ultra Glass Transparency Style */}
-      <nav className={`transition-all duration-300 backdrop-saturate-150 ${
+      {/* Main Navigation - 100% Transparent on Hero, Glassmorphic on Scroll */}
+      <nav className={`transition-all duration-300 ${
         isScrolled 
-          ? 'bg-white/40 backdrop-blur-2xl shadow-[0_8px_32px_0_rgba(0,0,0,0.06)] py-3 border-b border-white/60 text-slate-900' 
-          : 'bg-white/20 backdrop-blur-xl py-4 text-slate-900 border-b border-white/40'
+          ? 'bg-white/40 backdrop-blur-2xl backdrop-saturate-150 shadow-[0_8px_32px_0_rgba(0,0,0,0.06)] py-3 border-b border-white/60 text-slate-900' 
+          : 'bg-transparent border-transparent backdrop-blur-none py-4 text-slate-900'
       }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
           
