@@ -5,10 +5,19 @@ import ScrollReveal from './ScrollReveal';
 export default function Hero({ onOpenBooking, onOpenAISmile }) {
   return (
     <section className="relative bg-gradient-to-b from-orange-50/60 via-white to-slate-50 text-slate-900 pt-28 sm:pt-32 lg:pt-36 pb-20 lg:pb-32 overflow-hidden">
-      {/* Soft Decorative Animated Glow */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-orange-200/40 rounded-full blur-[140px] pointer-events-none animate-pulse-glow" />
-      <div className="absolute top-12 left-10 w-72 h-72 bg-amber-300/20 rounded-full blur-[100px] pointer-events-none animate-float-slow" />
-      <div className="absolute bottom-10 right-10 w-80 h-80 bg-orange-400/15 rounded-full blur-[120px] pointer-events-none animate-float" />
+      {/* Soft Decorative Animated Glow - Richer tone with delayed motion */}
+      <div 
+        className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[650px] h-[650px] bg-orange-500/35 rounded-full blur-[130px] pointer-events-none animate-pulse-glow" 
+        style={{ animationDelay: '1.2s', animationDuration: '5.5s' }}
+      />
+      <div 
+        className="absolute top-10 left-10 w-80 h-80 bg-orange-600/25 rounded-full blur-[110px] pointer-events-none animate-float-slow" 
+        style={{ animationDelay: '2.2s', animationDuration: '8s' }}
+      />
+      <div 
+        className="absolute bottom-10 right-10 w-96 h-96 bg-amber-500/30 rounded-full blur-[120px] pointer-events-none animate-float" 
+        style={{ animationDelay: '3.5s', animationDuration: '7s' }}
+      />
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 space-y-8">
         
